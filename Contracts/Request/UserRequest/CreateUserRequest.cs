@@ -1,9 +1,6 @@
 namespace DatabankApi.Contracts.Request.UserRequest;
 
-public enum Role
-{
-    Administrator, Teacher
-}
+
 public class CreateUserRequest
 {
     public Guid UserId { get; init; }
@@ -13,6 +10,5 @@ public class CreateUserRequest
     public required string LastName { get; init; }
     public required string Department { get; init; }
     public required string Email { get; init; }
-    public Role Role { get; init; } = Role.Teacher;
     public DateTime CreateAt { get; init; }
 }
