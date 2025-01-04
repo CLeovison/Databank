@@ -1,4 +1,4 @@
-namespace DatabankApi.ValueObject;
+namespace DatabankApi.Primitive;
 
 public abstract class ValueObject : IEquatable<ValueObject>
 {
