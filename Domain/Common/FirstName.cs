@@ -6,6 +6,7 @@ public sealed class FirstName : ValueObject
     private static readonly Regex FirstNameRegex = new("^[a-z\\d](?:[a-z\\d]|-(?=[a-z\\d])){0,38}$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
     private const int MaxLength = 50;
 
+    //This Is The Constructor, FirstName   
     public FirstName(string value, Regex regex)
     {
         if (value.Length < MaxLength)
