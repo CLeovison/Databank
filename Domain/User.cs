@@ -5,7 +5,6 @@ namespace DatabankApi.Domain;
 
 public class User
 {
-
     public FirstName FirstName { get; init; } = default!;
     public Username Username { get; init; } = default!;
 

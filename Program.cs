@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 var config = builder.Configuration;
 
 builder.Services.AddSingleton<IDbConnectionFactory>(_ =>
-    new PostgresConnectionFactory(config.GetValue<string>("ConnectionStrings:DefaultConnection")));
+    new PostgresConnectionFactory(config.GetValue<string>("ConnectionStrings:DefaultConnection")) ?? throw new Exception(""));
 
 var app = builder.Build();
 

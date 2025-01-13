@@ -27,5 +27,6 @@ public sealed class FirstName : ValueObject
     protected override IEnumerable<object> GetAtomicValues()
     {
         yield return Value;
+        yield return RegularX;
     }
 }
