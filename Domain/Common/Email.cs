@@ -11,7 +11,7 @@ public class Email : ValueObject
 
     private int MinLength = 6;
 
-    public Email(Regex regex, string value)
+    public Email(string value, Regex regex)
     {
         if (value.Length < MinLength)
         {

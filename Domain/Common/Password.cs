@@ -1,0 +1,2 @@
+namespace DatabankApi.Domain.Common;
+

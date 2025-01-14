@@ -17,6 +17,8 @@ public static class UserDomainToApiContract
 
             FirstName = new FirstName(user.FirstName, new Regex("^[a-z\\d](?:[a-z\\d]|-(?=[a-z\\d])){0,38}$")),
             LastName = new LastName(user.LastName, new Regex("^[a-z\\d](?:[a-z\\d]|-(?=[a-z\\d])){0,38}$")),
+            Email = new Email(user.Email, new Regex("^[\\w!#$%&’*+/=?`{|}~^-]+(?:\\.[\\w!#$%&’*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$")),
+
         };
     }
 
