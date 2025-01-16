@@ -10,5 +10,6 @@ public class User
 
     public LastName LastName { get; init; } = default!;
     public Birthday Birthday { get; init; } = default!;
+    public Department Department { get; init; } = default!;
     public Email Email { get; init; } = default!;
 }
